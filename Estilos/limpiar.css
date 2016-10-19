@@ -1,0 +1,54 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+/*<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--esto se necesita para respetar la resolucion del contenido. No deja escalar con las manos-->*/
+
+
+* {
+	padding:0;
+	margin:0;
+	border:0;
+	-moz-box-sizing: border-box; /*para que el borde entre dentro del ancho de caja*/
+	-webkit-box-sizing: border-box; /*para que el borde entre dentro del ancho de caja*/
+	box-sizing: border-box; /*para que el borde entre dentro del ancho de caja*/
+	}
+
+header, nav, article, aside, section, footer {
+	display:block;
+}
+
+.float_izq {
+	float:left;
+}
+.float_der {
+	float:right;
+}
+.cierre {
+	clear:both;
+}
+.bloke {
+	display:block;
+}
+
+#container {
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+.margen_izq {
+	margin-right:20px;
+}
+
+.no_margen {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
+
+.saltoa {
+	margin-bottom:10px;
+}
+
+.centrado {
+	margin-left: auto;
+	margin-right: auto;
+}
