@@ -1,0 +1,153 @@
+<!DOCTYPE">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head lang=es>
+<title>garikoitz iruretagoiena</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+<link href="Estilos/limpiar.css" rel="stylesheet" type="text/css"/>
+<link href="Estilos/general.css" rel="stylesheet" type="text/css"/>
+
+<!--Los datos META-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="title" content="Lurraldebus">
+<meta name="keywords" content="Garikoitz Iruetagoiena, service design, user experience">
+<meta name="description" content="Una mirada desde la experiencia de usuario y diseño de servicios">
+<meta name="geo.placename" content="San Sebastián, Guipúzcoa, España">
+<meta name="geo.position" content="43.3183340;-1.9812310">
+<meta name="geo.region" content="ES-País Vasco">
+
+<!--FAVICON
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+-->
+
+<script type="application/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script src="js/typed.js" type="text/javascript"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83677624-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">
+
+$(function(){
+	$("#typed").typed({
+        // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+        stringsElement: $('#typed-strings'),
+        typeSpeed: 50,
+        backDelay: 800,
+        loop: true,
+        contentType: 'html', // or text
+        // defaults to false for infinite loop
+        loopCount: true,
+        callback: function(){ foo(); },
+        resetCallback: function() { newTyped(); }
+    });
+
+    $(".reset").click(function(){
+        $("#typed").typed('reset');
+    });
+});
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+</script>
+
+</head>
+
+<body class="cuerpo_100">
+
+		<header class="titulo titulo_blog">
+			<nav class="menua centrado">
+				<a href="index.html" class="m_home">home</a>
+				<a href="" class="m_blog elegido">blog</a>
+                <a href="curriculum.html" class="m_cv">cv</a>
+				<div class="cierre"></div>
+			</nav>
+    </header>
+
+    <div class="titulo_sub">
+      <h2>Reflexiones sobre diseño de servicios y experiencia de usuarios</h2>
+    </div>
+
+    <div class="cuerpo_blog">
+        <div class="cuerpo_1100 centrado">
+            <div class="menu_blog">
+                <a href="blog-microinteractions.html">
+                    <span>09.10.2016</span><br>
+                    <span class="menu_titulo">Microinteractions</span>
+                </a>
+                <a href="blog-lurraldebus-service-design.html" class="blog_on">
+                    <span>25.09.2016</span><br>
+                    <span class="menu_titulo">Lurraldebus</span>
+                </a>
+                <a href="blog-zinemaldia-service-design.html">
+                    <span>12.09.2016</span><br>
+                    <span class="menu_titulo">Zinemaldia</span>
+                </a>
+            </div>
+            <div class="noticia_blog">
+                <h1>Lurraldebus: una mirada desde la experiencia de usuario y diseño de servicios</h1>
+                <div class="separador_15"></div>
+                <img src="Imagenes/blog/lurraldebus.jpg" width="100%">
+                <div class="separador_15"></div>
+                <p>La movilidad es uno de los retos de presente y de futuro más importantes que tenemos que afrontar como sociedad, como colectivo, y bien los saben Uber, Tesla, Google etc. Hace tiempo que venimos escuchando y leyendo iniciativas sobre "smart mobility", pero realmente vemos pocos resultados todavía. Desde mi punto de vista todo proyecto de mejora de la movildiad ha de tener 2 objetivos principales: 1) Mejorar la experiencia de uso de las personas que se desplazan, y 2) Mejorar la eficiencia del desplazamiento en términos de tiempo, de consumo energético, de coste etc.</p>
+                <div class="separador_15"></div>
+                <h2>Las soluciones de movilidad han de generar mejores experiencia de uso<br>y mayor eficiencia del servicio</h2>
+                <div class="separador_15"></div>
+                <p>Mirando más cerca, me gustaría reflexionar sobre el servicio que ofrece Lurraldebus y la experiencia de uso que este servicio genera. Una de las claves para diseñar servicios satisfactorios es que las interacciones que realizan los usuarios en el tiempo tengan continuidad, sean parte de una misma narrativa, de una misma experiencia de marca, una experiencia "sin costuras" o "seamless" como se dice en inglés. Y en el caso de Lurraldebus tengo la imprensión de que se parece más a un "patchwork".</p>
+                <p>Analicemos por pasos cual puede ser el "viaje" o "journey" de un usuario al desplazarse de un lugar a otro usando el servicio de Lurraldbus:
+                <h6>1. Consultar horarios y trayectos</h6>
+                <p>En caso de que no sea un trayecto habitual o que realicemos con frecuencia, este es un momento especialmente importante. Yo utilizo la página web de Lurraldebus, que en su <a href="http://www.lurraldebus.eus/es" target="new">página de inicio muestra un prometedor planificador</a>. Pero al elegir el punto de salida y de destino (pueblo o ciudad), la dificultad viene en el siguiente paso, el de elegir las paradas correspondientes. La aplicación no hace ningún filtro, muestra todas las opciones, y en lugar de una ayuda se convierte en una dificutad, en una barrera, en un obstáculo. Al final, acabo consultándolo en la tabla minúscula del <a href="http://www.lurraldebus.eus/es/linea-ordutegiak" target="new">apartado de "líneas y horarios"</a>, o en la foto que saqué en su día al horario impreso de la marquesina más cercana a mi casa. Frustrante.</p>
+                <h6>2. La espera</h6>
+                <p>En mi opinión es uno de los momentos mejor resueltos, aunque sea solo en unas paradas. Existen totems informativos que nos indican el tiempo que falta para que llegue nuestro autobus. Bueno, siempre que sepamos si es el UK09, GO21E o DO01...</p>
+                <h6>3. El pago</h6>
+                <p>Para el pago utilizo la tarjeta correspondiente de pago, que pienso que tiene muchas ventajas. Sin embargo, como no soy usuario frecuente del servicio, normalmente me asalta la duda de si tendré suficiente saldo o no. Y una ve en el autobus, es demasido tarde para recargarla. En mi opinión, debería de ser el lugar principal para poder hacer esta acción.</p>
+                <h6>4. El viaje</h6>
+                <p>Durante el viaje, entre otras cosas, me pregunto sobre la pobre utilidad de las cada vez más habituales pantallas. Además de atiborrarnos con publicidad de todo tipo, con la promoción de las ventajas del "gran servicio" que nos ofrecen, pienso que es un espacio y un momento que se pueden usar de un modo de mayor interés para los usuarios. ¿Y cómo puede ser eso? Pues hay que investigar primero, comprender a los usuarios...</p>
+                <h6>5. ¿En que parada me conviene bajar?</h6>
+                <p>Tiene relación con el primer paso, y me parece un punto interesante para reflexionar. Como usuarios no estamos interesados en llegar a una parada de autobus, sino a un lugar concreto de la ciudad (o pueblo) de destino. Por lo tanto, saber que parada elegir para llegar al lugar que deseamos a veces no es fácil. ¿Cómo nos lo puede facilitar el propio servicio? </p>
+                <h6>6. ¿Y el post?</h6>
+                <p>Y este "viaje" no termina (o en mi opinion no debería) al bajarnos del autobus. Como usuario me gustaría que me facilitarán información sobre mi viaje de vuelta, poder consultar de manera rápida los viajes que he realizado y el coste de cada uno etc. Y eso a mí, seguro que otros usuarios tiene otras inquietudes y necesidades todavía sin cubrir.</p>
+                <p>Todas estas interacciones me parecen fruto de proyectos e iniciativas diferentes, sin un hilo conductor entre ellos. Por ejemplo, la web es una página web, y no la veo concebida como parte de un servicio holístico.</p>
+                <div class="separador_15"></div>
+                <h2>Service Design y Big Data son dos áreas de trabajo y conocimiento que han de trabajar de la mano para lograr los objetivos de mejor experiencia de uso y mejor eficiencia del servicio.</h2>
+                <div class="separador_15"></div>
+                <p>En este caso me he centrado en la perspectiva del usuario, pero conviene tener una mirada más amplia, una mirada sistémica. Además de los usuarios finales están los conductores, están los operadores en tiempo real que han de conocer la situción del servicio al momento para la toma de decisiones, y están los planificadores que definen las líneas, lo horarios, los trayectos, las inversiones etc.</p>
+                <p>Y en este sentido el uso de Big Data es esencial. Cada día, semana, mes generamos una gran cantidad de información de como nos movemos, pagando con la tarjeta dejamos rastro de nuestros movimientos y desplazamientos etc. Pues me gustaría que usaran "mi información" para ofrecerme un servicio mejor, más adecuado a mis hábitos y mis necesidades.</p>
+                <p> Service Design y Big Data son dos áreas de trabajo y conocimiento que han de trabajar de la mano para lograr los objetivos de mejor experiencia de uso y mejor eficiencia del servicio.</p>
+                <div class="separador_15"></div>
+
+
+                <a href="http://www.facebook.com/sharer.php?u=http://www.garikoitziruretagoiena.com/blog-lurraldebus-service-design.html" target="new" class="sharef"></a>
+                <a href="https://twitter.com/home?status=http%3A//www.garikoitziruretagoiena.com/blog-lurraldebus-service-design.html" target="new" class="sharet"></a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.garikoitziruretagoiena.com/blog-lurraldebus-service-design.html&title=Lurraldebus&summary=una%20mirada%20desde%20la%20experiencia%20de%20usuario%20y%20dise%C3%B1o%20de%20servicios&source=" target="new" class="sharel"></a>
+                <div class="cierre"></div>
+
+                <!--
+                <a href="http://www.facebook.com/sharer.php?u=http://www.garikoitziruretagoiena.com/blog-zinemaldia-service-design.html=<? echo 'Zinemaldi Service Design';?>" target="new" class="sharef"></a>
+                <a href="https://twitter.com/home?status=<? echo nl2br($fila['titulo']);?> www.tipptoppaleman.com/noticias?id_noticia=<? echo $noticia;?>" target="new" class="sharet"></a>
+                -->
+            </div>
+            <div class="cierre"></div>
+        </div>
+    </div>
+
+
+	<footer class="construccion con_2">
+			<p>Estoy construyendo la página, y lo quiero hacer con mimo.<br>Mientras, puedes ver mi perfil en <a href="https://www.linkedin.com/in/giruretagoiena" target="new">linkedin</a> o escribirme un<br>email a <a href="mailto:gari.iruretagoiena@gmail.com">gari.iruretagoiena@gmail.com</a> para cualquier consulta.</p>
+	</footer>
+
+
+</body>

@@ -458,7 +458,6 @@ BLOG
 
 .menu_blog {
 	width: 250px;
-	border-right: 1px solid #ddd;
 	height: 100%;
 }
 
@@ -492,11 +491,16 @@ BLOG
 .noticia_blog {
 	width: 800px;
 	padding-left: 40px;
+	border-left: 1px solid #ddd;
 }
 
 .noticia_blog a {
 	color: #323232;
 	border-bottom: #FEEA39 3px solid;
+}
+
+.noticia_blog p {
+	font-size: 19px !important;
 }
 
 .noticia_blog a:hover {
@@ -507,53 +511,141 @@ BLOG
 	border-bottom: #FEEA39 3px solid;
 }
 
+/**************************************
+**************************************
+MAIN PROYECTOS
+**************************************
+**************************************/
+.proyectos_main {
+	height: 400px;
+	background-image:url(../Imagenes/proyectos/0/0_1.jpg);
+}
+
+.proyectos_main h1 {
+	color: #fff;
+	padding-top: 200px;
+	font-weight: 400;
+	font-size: 35px;
+	width: 600px;
+}
+
+.w_33_proyectos {
+	float: left;
+	width: 32.5%;
+	margin-right: 1.25%;
+}
+
+	.w_33_proyectos .proyecto_mosaic {
+		width: 100%;
+		padding-bottom: 0px;
+		overflow: hidden;
+	}
+
+	.w_33_proyectos .proyecto_mosaic img {
+
+	}
+
+	.w_33_proyectos .proyecto_mosaic h2, .w_33_proyectos .proyecto_mosaic p, .w_33_proyectos .proyecto_mosaic span {
+		color: #323232;
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: left;
+		font-style: inherit;
+	}
+
+	.w_33_proyectos .proyecto_mosaic h2 {
+		font-size: 24px;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		font-weight: 400;
+	}
+
+	.w_33_proyectos .proyecto_mosaic span {
+		color: #EF4437;
+		font-size: 18px;
+	}
+
+	.w_33_proyectos .proyecto_mosaic p {
+		color: #646464;
+		font-size: 18px;
+		margin-top: 10px;
+		opacity: 0;
+		margin-bottom: -15px;
+	}
+
 
 /**************************************
 **************************************
-PROYECTOS
+CADA PROYECTO
 **************************************
 **************************************/
+
 .titulo_proyectos {
 	background-color: #EF4437 !important;
 }
 
 	.titulo_proyectos h2 {
+		width: 850px;
 		float: left;
-		text-align: left !important;
+		text-align: center!important;
 	}
 
 a.volver {
-	opacity: 0.7;
-	margin-top: 24px;
+	margin-top: 22px;
 	color: #fff;
-	padding-left: 35px;
-	padding-top: -10px;
 	font-size: 20px;
 	display: block;
-	float: left;
-	width: 120px;
-	border-right: 1px solid #fff;
-	margin-right: 35px;
-	background-position: left 1px;
+	width: 100px;
 	background-repeat: no-repeat;
+}
+
+a.anterior {
+	float: left;
+	padding-left: 30px;
+	background-position: left 3px;
 	background-image:url(../Imagenes/icons/volver_1.png);
 }
 
-	a.volver:hover {opacity: 1;}
+a.siguiente {
+	float:right;
+	padding-right: 60px;
+	background-position: right 3px;
+	background-image:url(../Imagenes/icons/volver_1.png);
+}
+
+	a.volver span {opacity: 0;}
+
 
 
 /*******************
 TEXTO PROYECTOS
 *******************/
+span.ano {
+	color: #323232 !important;
+	font-size: 18px;
+}
 
+span.ano2 {
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+span.ano3 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.w25_des  {
+	margin-top: 10px;
+}
 
 .w25_des h3 {
 	color: #323232;
-	font-size: 18px !important;
+	font-size: 19px !important;
 }
 .w25_des p {
 	color: #646464;
-	font-size: 16px;
+	font-size: 17px;
 }
 
 .proyecto_img {

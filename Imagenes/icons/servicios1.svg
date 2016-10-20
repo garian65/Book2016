@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="197.434px" height="96.341px" viewBox="0 0 197.434 96.341" enable-background="new 0 0 197.434 96.341"
+	 xml:space="preserve">
+<rect x="252.85" y="18.566" fill="#37474F" width="133.649" height="17.503"/>
+<rect x="252.85" y="42.197" fill="#37474F" width="39.715" height="47.259"/>
+<rect x="299.817" y="42.197" fill="#37474F" width="39.715" height="47.259"/>
+<rect x="346.784" y="42.197" fill="#37474F" width="39.715" height="47.259"/>
+<circle fill="none" stroke="#09BCD4" stroke-width="5.8119" stroke-miterlimit="10" cx="18.258" cy="54.35" r="12.107"/>
+<circle fill="none" stroke="#09BCD4" stroke-width="5.8119" stroke-miterlimit="10" cx="72.188" cy="70.09" r="12.107"/>
+<circle fill="none" stroke="#09BCD4" stroke-width="5.8119" stroke-miterlimit="10" cx="126.117" cy="32.673" r="12.107"/>
+<circle fill="none" stroke="#09BCD4" stroke-width="5.8119" stroke-miterlimit="10" cx="180.047" cy="54.35" r="12.107"/>
+<line fill="none" stroke="#09BCD4" stroke-width="5.8119" stroke-miterlimit="10" x1="137.351" y1="37.189" x2="168.814" y2="49.835"/>
+<line fill="none" stroke="#09BCD4" stroke-width="5.8119" stroke-miterlimit="10" x1="82.131" y1="63.192" x2="116.171" y2="39.574"/>
+<line fill="none" stroke="#09BCD4" stroke-width="5.8119" stroke-miterlimit="10" x1="29.88" y1="57.743" x2="60.566" y2="66.699"/>
+<g>
+	<path fill="#09BCD4" d="M645.278,17.721l11.086-9.879c1.693-1.51,4.291-1.36,5.8,0.334l14.931,16.753
+		c1.51,1.694,1.36,4.292-0.333,5.801l-11.085,9.879L645.278,17.721z"/>
+	<polygon fill="#09BCD4" points="595.472,62.107 595.472,62.107 640.375,22.089 660.774,44.978 615.87,84.996 609.108,70.489 	"/>
+	<polyline fill="#09BCD4" points="609.991,90.165 603.27,75.704 589.674,67.368 589.674,67.368 586.074,90.501 609.991,90.165 	"/>
+</g>
+<g>
+	<path fill="#09BCD4" d="M66.547-236.351c-1.985-21.334-19.938-38.037-41.792-38.037c-21.732,0-39.607,16.517-41.757,37.682
+		L66.547-236.351z"/>
+	<circle fill="#09BCD4" cx="24.773" cy="-281.276" r="4.847"/>
+	<path fill="#09BCD4" d="M81.456-230.386c0-1.75-1.418-3.169-3.169-3.169H-28.776c-1.75,0-3.169,1.419-3.169,3.169l0,0
+		c0,1.75,1.419,3.169,3.169,3.169H78.287C80.038-227.217,81.456-228.636,81.456-230.386L81.456-230.386z"/>
+	<path fill="#09BCD4" d="M2.789-170.734c6.898-10.998,18.455-13.98,26.844-23.488c8.389-9.506,22.929-21.438,27.03-24.133
+		s2.796-5.693,2.796-5.693s-8.016,0-12.303,0c-4.288,0-30.386,16.031-36.164,15.845c-5.779-0.186-14.168-15.845-14.168-15.845
+		s-6.711,0-8.554,0c-1.842,0,2.961,7.83,4.639,12.677c1.678,4.846-0.187,9.879-3.169,14.166s0,12.117,0,12.117l-6.741,3.543
+		c0,0,3.66,5.924,8.32,8.16S2.789-170.734,2.789-170.734z"/>
+</g>
+</svg>
