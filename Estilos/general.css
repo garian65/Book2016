@@ -434,7 +434,7 @@ BLOG
 		width: 30px;
 		height: 30px;
 		display: block;
-		background-image:url(../Imagenes/icons/twitter10.png);
+		background-image:url(../Imagenes/icons/Twitter10.png);
 	}
 
 	.sharel {
@@ -457,7 +457,7 @@ BLOG
 }
 
 .menu_blog {
-	width: 250px;
+	width: 24%;
 	height: 100%;
 }
 
@@ -489,8 +489,9 @@ BLOG
 	}
 
 .noticia_blog {
-	width: 800px;
-	padding-left: 40px;
+	width: 76%;
+	padding-left: 20px;
+	padding-right: 20px;
 	border-left: 1px solid #ddd;
 }
 
@@ -509,6 +510,14 @@ BLOG
 	-moz-transition:All 0.3s ease;
 	background-color: #FEEA39;
 	border-bottom: #FEEA39 3px solid;
+}
+
+span.pie_de_foto {
+	display: block;
+	color: #bbb !important;
+	font-size: 18px;
+	font-style: italic;
+	margin-top: 5px;
 }
 
 /**************************************
