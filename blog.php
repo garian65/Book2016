@@ -60,48 +60,48 @@
             <div class="menu_blog">
 
                 <?
-                $sql="SELECT * FROM lista_post";
+                $sql="SELECT * FROM lista_post ORDER BY fecha DESC";
                 $resultado=mysql_query($sql);
+                if (!empty ($_GET)) {
+                    $post = $_GET["id_post"];
+                } else {
+                    $post=mysql_num_rows($resultado);
+                }
+                $cont = mysql_num_rows($resultado) +1;
                 ?>
 
-                <? while ($fila=mysql_fetch_array($resultado)) { ?>
-                    <a href="blog-<? echo ($fila['url']);?>" class="blog_on">
+
+
+                <? while ($fila=mysql_fetch_array($resultado)) {
+                $cont --;
+                ?>
+                    <a href="blog.php?id_post=<? echo ($fila['id']);?>" class="<? if (($post == $cont)) {echo "blog_on";}?>">
                         <span><? echo ($fila['fecha']);?></span><br>
                         <span class="menu_titulo"><? echo ($fila['titulo']);?></span>
                     </a>
                 <? } ?>
-                <!--
-                <a href="blog-metadiseno.html" class="blog_on">
-                    <span>24.10.2016</span><br>
-                    <span class="menu_titulo">Metadiseño</span>
-                </a>
-                <a href="blog-microinteractions.html">
-                    <span>09.10.2016</span><br>
-                    <span class="menu_titulo">Microinteractions</span>
-                </a>
-                <a href="blog-lurraldebus-service-design.html">
-                    <span>25.09.2016</span><br>
-                    <span class="menu_titulo">Lurraldebus</span>
-                </a>
-                <a href="blog-zinemaldia-service-design.html">
-                    <span>12.09.2016</span><br>
-                    <span class="menu_titulo">Zinemaldia</span>
-                </a>
-                -->
+
             </div>
             <div class="noticia_blog">
                 <?
-                $sql="SELECT * FROM lista_post WHERE id='1'";
+                if (!empty ($_GET)) {
+                    $post = $_GET["id_post"];
+                    $sql="SELECT * FROM lista_post WHERE id='$post'";
+                } else {
+                    $sql="SELECT * FROM lista_post ORDER BY fecha DESC LIMIT 1";
+                }
                 $resultado=mysql_query($sql);
                 $fila=mysql_fetch_array($resultado);
                 ?>
                 <h1><? echo ($fila['titulo']);?><br><? echo ($fila['subtitulo']);?></h1>
+                <div class="separador_15"></div>
                 <? echo ($fila['cuerpo']);?>
-
-
+                <!--
+                <div class="separador_15"></div>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.garikoitziruretagoiena.com/blog-metadiseno.html" target="new" class="sharef"></a>
                 <a href="https://twitter.com/home?status=http%3A//www.garikoitziruretagoiena.com/blog-metadiseno.html" target="new" class="sharet"></a>
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.garikoitziruretagoiena.com/blog-metadiseno.html" target="new" class="sharel"></a>
+                -->
                 <div class="cierre"></div>
 
                 

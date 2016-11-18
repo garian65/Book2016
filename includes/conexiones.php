@@ -15,9 +15,6 @@ y le agrega el error ocurrido con "mysql_error()"
 */
 if (!$conexion) {
     die('<strong>No pudo conectarse:</strong> ' . mysql_error());
-}else{
-//La siguiente linea no es necesaria, simplemente la pondremos ahora para poder observar que la conexión ha sido realizada
-echo 'Conectado  satisfactoriamente al servidor <br />';
 }
 /*En esta linea seleccionaremos la BD con la que trabajaremos y le pasaremos como referencia la conexión al servidor.
 Para saber si se conecto o no a la BD podríamos utilizar el IF de la misma forma que la utilizamos al momento de conectar al servidor, pero usaremos otra forma de comprobar eso usando die().
